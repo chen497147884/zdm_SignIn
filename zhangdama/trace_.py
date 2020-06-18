@@ -79,7 +79,7 @@ def choice_track_list(dist):
     #         outsize += len(line) + 1
     #         output.write(line + str.encode('\n'))
 
-    t_dict = pickle.load(open(base_dir + '/t_dict.pkl', 'rb'))
+    t_dict = pickle.load(open(base_dir + '/t_dict_unix.pkl', 'rb'))
 
     if str(dist) in t_dict:
         print('in file %s' % dist)
